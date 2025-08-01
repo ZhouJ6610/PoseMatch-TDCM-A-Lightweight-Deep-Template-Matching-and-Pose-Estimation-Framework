@@ -63,8 +63,4 @@ class CoCo_Dataset(Dataset):
             imgR       = self.transform_img(Image.fromarray(imgR))
             template   = self.transform_roi(Image.fromarray(template))
             
-            return imgR, template, center[1], center[0], scale_y, scale_x, angle
-
-            template   = self.transform_roi(Image.fromarray(template))
-            
             return name, imgR, template, center[1], center[0], scale_y, scale_x, angle
