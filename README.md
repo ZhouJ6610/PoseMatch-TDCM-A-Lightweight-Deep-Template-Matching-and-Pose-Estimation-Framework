@@ -38,6 +38,9 @@ To try with your own images, edit the file and set:
 ```python
 query_image_path = './res/image.jpg'
 template_image_path = './res/template.jpg'
+
+# true_param: center(x,y) scale_x(templateSize_x / 36), scale_y(templateSize_y / 36), angle
+true_param = np.array([47.47,67.61,0.89,1.31,-78.53], dtype=np.float32)
 ```
    
 
